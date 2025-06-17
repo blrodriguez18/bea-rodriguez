@@ -354,7 +354,9 @@ html {
 
 .text-container-3 {
     font-size: 20px;
-    color:#7d1300
+    color:#7d1300;
+    justify-content: center;
+    display: flex;
 }
 
 .text-container-3 a:hover {
