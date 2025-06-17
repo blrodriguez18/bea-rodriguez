@@ -350,3 +350,13 @@ footer{
 html {
     scroll-behavior: smooth;
 }
+
+
+.text-container-3 {
+    font-size: 20px;
+    color:#7d1300
+}
+
+.text-container-3 a:hover {
+    color:#ff6b6b;
+}
