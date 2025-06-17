@@ -1,4 +1,4 @@
-html {
+/* html {
   scroll-behavior: smooth;
 }
 
@@ -6,7 +6,7 @@ html {
 #projects, 
 #contact {
   scroll-margin-top: 100px; /* Adjust this number to your navbar's height */
-}
+/* }  */
 
 /* #contact {
   scroll-margin-top: 150px; */
