@@ -373,3 +373,81 @@ html {
 .text-container-3 a:hover {
     color:#ff6b6b;
 }
+
+.art_intro h3 {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+.circular-image-2 {
+    width: 300px;
+    height: 300px;
+    margin: auto;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 10px solid #7d1300;
+    margin-top: 50px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    overflow: hidden;
+
+}
+
+.circular-image-2:hover {
+    background-color: #7d1300;
+}
+
+.text {
+  position: absolute;
+  transition: opacity 0.6s ease;
+}
+
+.pom {
+  opacity: 1;
+}
+
+.pom h2 {
+    color: #ff824d;
+}
+
+.download {
+  opacity: 0;
+}
+
+.download h2 {
+    color:white;
+}
+
+.circular-image-2:hover .pom {
+  opacity: 0;
+}
+
+.circular-image-2:hover .download {
+  opacity: 1;
+}
+
+#pom {
+    text-align: center;
+}
+
+#pom h2 {
+    font-size: 28px;
+    margin-top: 10px;
+}
+
+.pom-logo {
+    width: 70px;
+    margin-top: 30px;
+}
+
+.logo-cont {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+}
