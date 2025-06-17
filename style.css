@@ -246,7 +246,7 @@ h2{
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-bottom: 140px;
+    margin-bottom: 200px;
 }
 
 #mr {
@@ -366,7 +366,7 @@ html {
     align-content: center;
     flex-wrap: wrap;
     display: flex;
-    margin-top: 250px;
+    margin-top: 200px;
     padding-top: 50px;
 }
 
