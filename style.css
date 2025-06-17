@@ -116,6 +116,12 @@ body {
     margin-bottom: 100px;
 }
 
+#rectangle{
+    width:200px;
+    height:100px;
+    background:#ff6347;
+}
+
 .centered-content-1 {
     text-align: center;
     color: #7d1300;
