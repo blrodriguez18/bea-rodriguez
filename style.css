@@ -3,12 +3,13 @@ html {
 }
 
 #about,
-#projects {
+#projects, 
+#contact {
   scroll-margin-top: 100px; /* Adjust this number to your navbar's height */
 }
 
-#contact {
-  scroll-margin-top: 150px;
+/* #contact {
+  scroll-margin-top: 150px; */
 
 body {
     font-family: "Trebuchet MS", sans-serif;
