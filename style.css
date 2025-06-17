@@ -355,8 +355,9 @@ html {
 .text-container-3 {
     font-size: 20px;
     color:#7d1300;
-    justify-content: center;
+    text-align: center;
     display: flex;
+    margin-top: 50px;
 }
 
 .text-container-3 a:hover {
