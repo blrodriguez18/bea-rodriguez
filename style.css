@@ -464,3 +464,24 @@ html {
      margin-left: 100px;
      margin-right: 100px;
 }
+
+.chatbox {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.chatbox h3 {
+    color: #7d1300;
+    font-size: 24px;
+}
+
+.bot-image {
+    width: 220px;
+    transition: transform 0.5s;
+}
+
+.bot-image:hover {
+    animation: grow-bounce 0.75s forwards;
+}
+
