@@ -3,6 +3,7 @@
 } */
 
 #about,
+#experience,
 #projects {
   scroll-margin-top: 0px; }
 
@@ -75,6 +76,8 @@ body {
     box-sizing: border-box;
 }
 
+
+
 .image-container {
     flex: 1 1 50%;
     /*justify-items: center;*/
@@ -97,24 +100,56 @@ body {
 
 }
 
+
 .text-container-1 {
     flex: 1 1 50%;
     margin: auto;
     max-width: 50%;
     padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;
 }
 
 
-.text-container-1 h2, .text-container-1 h4 {
-    flex: 1 1 100%;
-    align-content: center;
+.text-container-1 h2,
+.text-container-1 h4 {
     text-align: center;
-    line-height: 0.2;
+    line-height: 1;
+    margin: 0.2rem 0;
+    padding-bottom: 20px;
 }
 
 .text-container-1 h2{
     color: #7d1300;
     line-height: 1;
+}
+
+.text-container-1 .btn {
+    /* align-content: center;
+    align-items: center; */
+    border-radius: 18px;
+    background-color: white;
+    border: 3px solid #ff6b6b;
+    font-size: 18px;
+    font-family: "Trebuchet MS", sans-serif;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+    width: 120px;
+    height: 50px;
+}
+
+.text-container-1 .btn:hover {
+  background-color: #ff6b6b;
+} 
+
+.text-container-1 .btn a {
+    color:#7d1300;
+}
+
+.text-container-1 .btn:hover a{
+    color: white
 }
 
 
@@ -192,7 +227,6 @@ body {
     text-align: center;
     color: #7d1300;
     padding-top: 100px;
-    /*padding-bottom: 20px;*/
     font-size: 28px;
 }
 
@@ -242,28 +276,65 @@ h2{
   align-items: center;
 }
 
-.proj-set{
+.proj-set {
     display: flex;
+    flex-direction: column;
+    gap: 80px;
+    margin-bottom: 25px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+/* Each project row */
+.project {
+    display: flex;
+    align-items: center;
     justify-content: center;
-    gap: 40px;
-    margin-bottom: 80px;
+    gap: 80px;
+    max-width: 1100px;   /* controls overall width */
+    margin: 0 auto;
 }
 
-#mr {
-    height: 100px;
-    /*margin-bottom: 30px;*/
+/* Flip layout for middle project */
+.project.reverse {
+    flex-direction: row-reverse;
 }
 
-#hp {
-    height: 120px;
-    margin-top: 145px;
-    margin-left: 10px;
+.project.reverse .project-text {
+    text-align: right;
 }
 
-#cf{
-    height: 60px;
-    margin-top: 80px;
-    margin-left: 70px;
+.project.reverse .project-img img {
+    width: 270px;  
+}
+
+/* Bigger images */
+.project-img img {
+    width: 220px; 
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: subtle hover effect */
+.project-img img:hover {
+    transform: scale(1.05);
+}
+
+/* Wider text container */
+.project-text {
+    max-width: 650px;  
+}
+
+/* Bigger, more readable text */
+.project-text h5 {
+    font-size: 18px; 
+    line-height: 1.6;
+    color:#7d1300
+}
+
+.project-text h3 {
+    font-size: 24px;  
+    line-height: 1.6;
 }
 
 .hover-image {
@@ -310,7 +381,7 @@ h2{
 
 .text-container-2 {
     flex-wrap: wrap;
-    padding-top: 300px;
+    padding-top: 200px;
     color: black;
     justify-content: center;
     align-content: center;
@@ -360,14 +431,18 @@ html {
 
 .text-container-3 {
     font-size: 16px;
-    color:#7d1300;
+    color:#ff903b;
     text-align: center;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
     display: flex;
-     margin-top: 120px;
-    padding-top: 50px;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+.text-container-3 a {
+    color:#c41d00;
 }
 
 .text-container-3 a:hover {
@@ -469,6 +544,8 @@ html {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
 }
 
 .chatbox h3 {
@@ -485,3 +562,65 @@ html {
     animation: grow-bounce 0.75s forwards;
 }
 
+.experience-section {
+    padding: 60px 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.experience-section h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #7d1300;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 40px;
+    border-left: 4px solid #ff6b6b;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    padding-left: 30px;
+}
+
+.timeline-dot {
+    position: absolute;
+    left: -13px;
+    top: 8px;
+    width: 20px;
+    height: 20px;
+    background-color: #ff6b6b;
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 3px #ff6b6b;
+}
+
+.timeline-content {
+    background: #fff;
+    padding: 20px 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h3 {
+    margin: 0;
+    font-size: 22px;
+    color: #7d1300;
+}
+
+.timeline-content h4 {
+    margin: 6px 0;
+    font-size: 18px;
+    color: #444;
+}
+
+.timeline-content p {
+    margin: 6px 0;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
