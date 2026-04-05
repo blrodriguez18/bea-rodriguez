@@ -182,6 +182,7 @@ body {
     border: 8px solid transparent;
     transition: all 0.3s ease;
   color: white;
+  line-height: 0.7;
 }
 
 #card1 {
