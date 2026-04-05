@@ -173,7 +173,7 @@ body {
   padding: 20px;
   padding-bottom: 40px;
   width: 350px;
-  height: 430px;
+  height: 450px;
   text-align: center;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   display: flex;
@@ -182,7 +182,7 @@ body {
     border: 8px solid transparent;
     transition: all 0.3s ease;
   color: white;
-  line-height: 0.3;
+  line-height: 0.5;
 }
 
 #card1 {
