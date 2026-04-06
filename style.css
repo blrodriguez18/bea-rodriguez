@@ -572,9 +572,9 @@ html {
     margin: 0 auto;
 }
 
-.experience-section h2 {
+.experience-section h1 {
     text-align: center;
-    font-size: 36px;
+    font-size: 48px;
     margin-bottom: 50px;
     color: #7d1300;
 }
